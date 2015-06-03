@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+	<p>
+		<input value="" id="multi1">
+		*
+		<input value="" id="multi2">
+		>
+		<input value="" id="numvar3">
+		<input type="button" value="Check" onclick="check()">
+	
+	</p>
+	<script>
+		if (document.getElementById('multi1').value)
+		function multi(){
+		var multinumber1=document.getElementById("multi1").value;
+		var multinumber2=document.getElementById("multi2").value;
+		//alert(multinumber1+" "+multinumber2);
+		var multiresult=0;
+		for(var i=0;i<multinumber2;i=i+1)
+		{
+			multiresult=eval(multiresult+"+"+multinumber1);
+		}
+		document.getElementById("multiresult").innerHTML=multiresult;
+		}
+	</script>
+</body>
+</html>
